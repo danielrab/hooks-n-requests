@@ -1539,6 +1539,7 @@
       "rootDir": "./src",
       "outDir": "./dist",
       "incremental": true,
+      "sourceMap": true,
       "project": "./tsconfig.json",
       "configFilePath": "./tsconfig.json"
     },
