@@ -1,0 +1,1 @@
+mklink /j %LocalAppData%\FoundryVTT\Data\modules\hooks-n-requests dist

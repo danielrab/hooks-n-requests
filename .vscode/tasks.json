@@ -1,0 +1,51 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "compile ts",
+			"type": "typescript",
+			"tsconfig": "tsconfig.json",
+			"problemMatcher": [
+				"$tsc"
+			]
+		},
+		{
+			"label": "copy assets",
+			"type": "shell",
+			"command": "xcopy /E /I /Y assets dist"
+		},
+		{
+			"label": "clear dist",
+			"type": "shell",
+			"command": "rmdir /Q /S dist"
+		},
+		{
+			"label": "build",
+			"dependsOrder": "sequence",
+			"dependsOn": [
+				"copy assets",
+				"compile ts"
+			],
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "rebuild",
+			"dependsOrder": "sequence",
+			"dependsOn": [
+				"clear dist",
+				"build"
+			],
+			"group": "build",
+			"problemMatcher": []
+		}
+	],
+	"inputs": [
+			{
+					"id": "run_js_file",
+					"type": "command",
+					"command": "watch-run.getFilename",
+					"args" : "run_js"
+			}
+	]
+}
