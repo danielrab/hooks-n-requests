@@ -9,7 +9,7 @@
   "manifestPlusVersion": "1.1.0",
   "url": "https://github.com/danielrab/hooks-n-requests",
   "manifest": "https://raw.githubusercontent.com/danielrab/hooks-n-requests/master/dist/module.json",
-  "download": "",
+  "download": "https://github.com/danielrab/hooks-n-requests/archive/refs/heads/master.zip",
   "type": "module",
   "esmodules": [
     "dist/scripts/module.js"
