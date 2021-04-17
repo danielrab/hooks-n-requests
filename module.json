@@ -12,7 +12,7 @@
   "download": "",
   "type": "module",
   "esmodules": [
-    "scripts/module.js"
+    "dist/scripts/module.js"
   ],
   "dependencies": [],
   "conflicts": [],
