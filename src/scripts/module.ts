@@ -1,3 +1,4 @@
 import * as RequestManager from './RequestManager.js'
 
-globalThis.RequestManager = RequestManager
+globalThis.hooksNrequests = {}
+globalThis.hooksNrequests.RequestManager = RequestManager

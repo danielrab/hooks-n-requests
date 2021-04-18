@@ -14,7 +14,13 @@
   "esmodules": [
     "dist/scripts/module.js"
   ],
-  "dependencies": [],
+  "dependencies": [
+    {
+      "name": "libWrapper",
+      "manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json"
+
+    }
+  ],
   "conflicts": [],
   "socket": true,
   "library": true
