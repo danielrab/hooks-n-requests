@@ -1,9 +1,3 @@
-import {RequestManager} from './requestHandling.js'
+import * as RequestManager from './RequestManager.js'
 
-Hooks.on('ready', () => {
-  RequestManager.emit({type: 'userReady'});
-  RequestManager.on('userReady', console.log);
-  RequestManager.on('pong', console.log);
-  RequestManager.on('ping', () => RequestManager.emit({type: 'pong'}))
-  setInterval(() => RequestManager.emit({type: 'ping'}), 1000)
-})
+globalThis.RequestManager = RequestManager

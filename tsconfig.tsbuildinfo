@@ -142,17 +142,22 @@
         "affectsGlobalScope": true
       },
       "./src/scripts/consts.ts": {
-        "version": "6e9e53a4a7e0870f690091aff0839b8664f56c7c538f840fc5a8febfbc60541e",
-        "signature": "62a91c8f7bddd7c100a5f5d3011e00db3aee8804270ee334362ce2f3d30404bd",
+        "version": "823ececc508f9451617f025514ca4e6e68689aff9228bf3f8ae8211cd4890e8d",
+        "signature": "dec3591e0659b1bb84de0bc86b3579337b7cc5bebefda8941860729bd74aeb0f",
         "affectsGlobalScope": false
       },
-      "./src/scripts/requesthandling.ts": {
-        "version": "d952988982a68d80eb409f158971cd50030e63276ecf3ad72b2e2b75238bec5d",
-        "signature": "4937ecb3ff741ce69897af5269fb0a6092bbb55af5e82c96e1d66d638e346571",
+      "./src/scripts/requestmanager.ts": {
+        "version": "3bfc742340dff8c7f65789eabe8d488da205d592ac456bb5e0faed219c4dbcc6",
+        "signature": "20558aa82e664a5065841ae4467e6a54167047c0f921ead1f1ba4c80ee1cbd1b",
+        "affectsGlobalScope": false
+      },
+      "./src/scripts/connectionkeeper.ts": {
+        "version": "80fe8ab42e3e732d24e451f48fc9900a5908ee706c7111ef5750d1cb42d27c71",
+        "signature": "882d186a96faecb4d40cf5a43299242a13b54c804b2c19689232a5fcbc7c7845",
         "affectsGlobalScope": false
       },
       "./src/scripts/module.ts": {
-        "version": "fc9d189a2357278be269c9537771cbd2ce40be7fd791ac0211817dce7cbde342",
+        "version": "8a8557563f535cdd63e53b8fa38e29b292bf268ac2fc01e35d416ea2d4a19bbe",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
         "affectsGlobalScope": false
       },
@@ -1849,10 +1854,14 @@
       "./node_modules/utility-types/dist/utility-types.d.ts": [
         "./node_modules/utility-types/dist/mapped-types.d.ts"
       ],
-      "./src/scripts/module.ts": [
-        "./src/scripts/requesthandling.ts"
+      "./src/scripts/connectionkeeper.ts": [
+        "./src/scripts/consts.ts",
+        "./src/scripts/requestmanager.ts"
       ],
-      "./src/scripts/requesthandling.ts": [
+      "./src/scripts/module.ts": [
+        "./src/scripts/requestmanager.ts"
+      ],
+      "./src/scripts/requestmanager.ts": [
         "./src/scripts/consts.ts"
       ]
     },
@@ -2436,9 +2445,10 @@
       "./node_modules/utility-types/dist/index.d.ts",
       "./node_modules/utility-types/dist/mapped-types.d.ts",
       "./node_modules/utility-types/dist/utility-types.d.ts",
+      "./src/scripts/connectionkeeper.ts",
       "./src/scripts/consts.ts",
       "./src/scripts/module.ts",
-      "./src/scripts/requesthandling.ts"
+      "./src/scripts/requestmanager.ts"
     ]
   },
   "version": "4.1.3"
