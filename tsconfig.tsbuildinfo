@@ -141,10 +141,20 @@
         "signature": "89bf2b7a601b73ea4311eda9c41f86a58994fec1bee3b87c4a14d68d9adcdcbd",
         "affectsGlobalScope": true
       },
+      "./src/scripts/consts.ts": {
+        "version": "6e9e53a4a7e0870f690091aff0839b8664f56c7c538f840fc5a8febfbc60541e",
+        "signature": "62a91c8f7bddd7c100a5f5d3011e00db3aee8804270ee334362ce2f3d30404bd",
+        "affectsGlobalScope": false
+      },
+      "./src/scripts/requesthandling.ts": {
+        "version": "d952988982a68d80eb409f158971cd50030e63276ecf3ad72b2e2b75238bec5d",
+        "signature": "4937ecb3ff741ce69897af5269fb0a6092bbb55af5e82c96e1d66d638e346571",
+        "affectsGlobalScope": false
+      },
       "./src/scripts/module.ts": {
-        "version": "f2ae6bd066f7a15fb70ce6dfa7f67818e5e01dc415cbf7a3c47f0c80f70fc532",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "affectsGlobalScope": true
+        "version": "fc9d189a2357278be269c9537771cbd2ce40be7fd791ac0211817dce7cbde342",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
+        "affectsGlobalScope": false
       },
       "./node_modules/@types/jquery/jquerystatic.d.ts": {
         "version": "2a19c7dd007f71b9db87dba915e20d894dbdac8aa8fab5d1c3083a61f2316a5c",
@@ -1520,6 +1530,31 @@
         "version": "9c4c395e927045b324877acdc4bfb95f128f36bc9f073266a2f0342495075a4f",
         "signature": "9c4c395e927045b324877acdc4bfb95f128f36bc9f073266a2f0342495075a4f",
         "affectsGlobalScope": false
+      },
+      "./node_modules/utility-types/dist/aliases-and-guards.d.ts": {
+        "version": "bd0d80db12ef1aceefc4f9d3eb88517b9634fa747ae8475981da8655292feab8",
+        "signature": "bd0d80db12ef1aceefc4f9d3eb88517b9634fa747ae8475981da8655292feab8",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/utility-types/dist/mapped-types.d.ts": {
+        "version": "55e68fb1618e3f55f7866b8c8415152159309a14b716370081ab0b7af96d876e",
+        "signature": "55e68fb1618e3f55f7866b8c8415152159309a14b716370081ab0b7af96d876e",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/utility-types/dist/utility-types.d.ts": {
+        "version": "bf0491af2455f92282b61807be2be6e7ad7d532e47fac7b698019d3617c28ff7",
+        "signature": "bf0491af2455f92282b61807be2be6e7ad7d532e47fac7b698019d3617c28ff7",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/utility-types/dist/functional-helpers.d.ts": {
+        "version": "5d874fb879ab8601c02549817dceb2d0a30729cb7e161625dd6f819bbff1ec0b",
+        "signature": "5d874fb879ab8601c02549817dceb2d0a30729cb7e161625dd6f819bbff1ec0b",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/utility-types/dist/index.d.ts": {
+        "version": "ee551a880882770c4f56a0964a9767c9feafe497a5be52652527d098c88d85cb",
+        "signature": "ee551a880882770c4f56a0964a9767c9feafe497a5be52652527d098c88d85cb",
+        "affectsGlobalScope": false
       }
     },
     "options": {
@@ -1533,7 +1568,8 @@
       ],
       "types": [
         "@league-of-foundry-developers/foundry-vtt-types",
-        "node"
+        "node",
+        "utility-types"
       ],
       "allowUmdGlobalAccess": true,
       "rootDir": "./src",
@@ -1800,6 +1836,24 @@
       ],
       "./node_modules/pixi-particles/index.d.ts": [
         "./node_modules/pixi.js/pixi.js.d.ts"
+      ],
+      "./node_modules/utility-types/dist/index.d.ts": [
+        "./node_modules/utility-types/dist/aliases-and-guards.d.ts",
+        "./node_modules/utility-types/dist/functional-helpers.d.ts",
+        "./node_modules/utility-types/dist/mapped-types.d.ts",
+        "./node_modules/utility-types/dist/utility-types.d.ts"
+      ],
+      "./node_modules/utility-types/dist/mapped-types.d.ts": [
+        "./node_modules/utility-types/dist/aliases-and-guards.d.ts"
+      ],
+      "./node_modules/utility-types/dist/utility-types.d.ts": [
+        "./node_modules/utility-types/dist/mapped-types.d.ts"
+      ],
+      "./src/scripts/module.ts": [
+        "./src/scripts/requesthandling.ts"
+      ],
+      "./src/scripts/requesthandling.ts": [
+        "./src/scripts/consts.ts"
       ]
     },
     "exportedModulesMap": {
@@ -2059,6 +2113,18 @@
       ],
       "./node_modules/pixi-particles/index.d.ts": [
         "./node_modules/pixi.js/pixi.js.d.ts"
+      ],
+      "./node_modules/utility-types/dist/index.d.ts": [
+        "./node_modules/utility-types/dist/aliases-and-guards.d.ts",
+        "./node_modules/utility-types/dist/functional-helpers.d.ts",
+        "./node_modules/utility-types/dist/mapped-types.d.ts",
+        "./node_modules/utility-types/dist/utility-types.d.ts"
+      ],
+      "./node_modules/utility-types/dist/mapped-types.d.ts": [
+        "./node_modules/utility-types/dist/aliases-and-guards.d.ts"
+      ],
+      "./node_modules/utility-types/dist/utility-types.d.ts": [
+        "./node_modules/utility-types/dist/mapped-types.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -2365,7 +2431,14 @@
       "./node_modules/pixi-particles/index.d.ts",
       "./node_modules/pixi.js/pixi.js.d.ts",
       "./node_modules/tinymce/tinymce.d.ts",
-      "./src/scripts/module.ts"
+      "./node_modules/utility-types/dist/aliases-and-guards.d.ts",
+      "./node_modules/utility-types/dist/functional-helpers.d.ts",
+      "./node_modules/utility-types/dist/index.d.ts",
+      "./node_modules/utility-types/dist/mapped-types.d.ts",
+      "./node_modules/utility-types/dist/utility-types.d.ts",
+      "./src/scripts/consts.ts",
+      "./src/scripts/module.ts",
+      "./src/scripts/requesthandling.ts"
     ]
   },
   "version": "4.1.3"
